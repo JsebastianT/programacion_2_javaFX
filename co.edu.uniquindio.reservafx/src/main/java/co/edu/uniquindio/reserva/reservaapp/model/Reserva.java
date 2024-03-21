@@ -1,5 +1,7 @@
 package co.edu.uniquindio.reserva.reservaapp.model;
 
+import co.edu.uniquindio.reserva.reservaapp.model.builder.ReservaBuilder;
+
 public class Reserva {
     private String cedula;
     private String nombre;
@@ -10,15 +12,24 @@ public class Reserva {
     private String tipoHabitacion;
 
 
-    public Reserva() {
-    }
-
-    public String getTipoHabitacion() {
-        return tipoHabitacion;
-    }
-
-    public void setTipoHabitacion(String tipoHabitacion) {
+    public Reserva(String cedula,
+                   String nombre,
+                   String apellido,
+                   String email,
+                   int edad,
+                   String celular,
+                   String tipoHabitacion) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.edad = edad;
+        this.celular = celular;
         this.tipoHabitacion = tipoHabitacion;
+    }
+
+    public static ReservaBuilder builder(){
+        return new ReservaBuilder();
     }
 
     public String getCedula() {
@@ -69,18 +80,12 @@ public class Reserva {
         this.celular = celular;
     }
 
-    @Override
-    public String toString() {
-        return "Reserva{" +
-                "cedula='" + cedula + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", email='" + email + '\'' +
-                ", edad=" + edad +
-                ", celular='" + celular + '\'' +
-                ", tipoHabitacion='" + tipoHabitacion + '\'' +
-                '}';
+    public String getTipoHabitacion() {
+        return tipoHabitacion;
     }
 
-
+    public void setTipoHabitacion(String tipoHabitacion) {
+        this.tipoHabitacion = tipoHabitacion;
+    }
 }
+

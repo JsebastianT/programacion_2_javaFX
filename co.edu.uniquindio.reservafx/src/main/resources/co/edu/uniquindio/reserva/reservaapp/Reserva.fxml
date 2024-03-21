@@ -32,9 +32,9 @@
                   <TextField fx:id="txtEmail" layoutX="107.0" layoutY="172.0" prefHeight="26.0" prefWidth="230.0" />
                   <TextField fx:id="txtCelular" layoutX="469.0" layoutY="174.0" prefHeight="26.0" prefWidth="230.0" />
                   <Separator layoutX="5.0" layoutY="224.0" prefHeight="3.0" prefWidth="738.0" />
-                  <RadioButton fx:id="rbtnHabitacionSencilla" layoutX="102.0" layoutY="247.0" mnemonicParsing="false" text="Habitación Sencilla" />
-                  <RadioButton fx:id="rbtnHabitacionDoble" layoutX="310.0" layoutY="247.0" mnemonicParsing="false" text="Habitación Doble" />
-                  <RadioButton fx:id="rbtnHabitacionFamiliar" layoutX="525.0" layoutY="247.0" mnemonicParsing="false" text="Habitación Familiar" />
+                  <RadioButton fx:id="rbtnTipodeBus1" layoutX="102.0" layoutY="247.0" mnemonicParsing="false" text="Bus 1" />
+                  <RadioButton fx:id="rbtnTipodeBus2" layoutX="310.0" layoutY="247.0" mnemonicParsing="false" text="Bus 2" />
+                  <RadioButton fx:id="rbtnTipodeBus3" layoutX="525.0" layoutY="247.0" mnemonicParsing="false" text="Bus 3" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">

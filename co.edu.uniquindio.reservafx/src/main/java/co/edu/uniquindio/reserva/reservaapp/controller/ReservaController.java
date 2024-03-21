@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 
 public class ReservaController {
 
+
     @FXML
     private ResourceBundle resources;
 
@@ -59,31 +60,29 @@ public class ReservaController {
 
     @FXML
     void initialize() {
-
     }
 
     private void agregarReserva() {
-        Reserva reserva = new Reserva();
-
-        reserva.setNombre(txtNombre.getText());
-        reserva.setApellido(txtApellido.getText());
-        reserva.setCedula(txtCedula.getText());
-        reserva.setEdad(Integer.parseInt(txtEdad.getText()));
-        reserva.setEmail(txtEmail.getText());
-        reserva.setCelular(txtCelular.getText());
-
-        // Agregar el tipo de habitación seleccionado
-        String tipoHabitacion = "";
-        if (rbtnHabitacionDoble.isSelected()) {
-            tipoHabitacion = "Doble";
-        } else if (rbtnHabitacionFamiliar.isSelected()) {
-            tipoHabitacion = "Familiar";
-        } else if (rbtnHabitacionSencilla.isSelected()) {
-            tipoHabitacion = "Sencilla";
-        }
-        reserva.setTipoHabitacion(tipoHabitacion);
-
-        txtResultado.setText(reserva.toString());
+//        Reserva reserva = new Reserva();
+//        reserva.setNombre(txtNombre.getText());
+//        reserva.setApellido(txtApellido.getText());
+//        reserva.setCedula(txtCedula.getText());
+//        reserva.setEdad(Integer.parseInt(txtEdad.getText()));
+//        reserva.setEmail(txtEmail.getText());
+//        reserva.setCelular(txtCelular.getText());
+//
+//        // Agregar el tipo de habitación seleccionado
+//        String tipoHabitacion = "";
+//        if (rbtnHabitacionDoble.isSelected()) {
+//            tipoHabitacion = "Doble";
+//        } else if (rbtnHabitacionFamiliar.isSelected()) {
+//            tipoHabitacion = "Familiar";
+//        } else if (rbtnHabitacionSencilla.isSelected()) {
+//            tipoHabitacion = "Sencilla";
+//        }
+//        reserva.setTipoHabitacion(tipoHabitacion);
+//
+//        txtResultado.setText(reserva.toString());
 
     }
 }
